@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -582,3 +585,33 @@ span {
 
 
 }
+
+
+
+/* Base */
+
+  h2 {
+    color: hsl(0, 0%, 28%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  
+  h2 span {
+    transition: 0.5s ease-out;
+  }
+  h2:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  h2:hover span:nth-child(1):after {
+    content: " ";
+  }
+  h2:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  h2:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
